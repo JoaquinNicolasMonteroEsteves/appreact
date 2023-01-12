@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Nunito:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 4px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+li:hover {
+    color: black;
+    background-color:grey;
+    transition: 0.4s;
+}
+
+li:active {
+    color: white;
+}
+
+.navbar-contenedor {
+    background-image: url(../../Imagenes/AoE2-Banner.webp);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: repeat-x;
+    height: 150px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar-menu {
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-menu span {
+    font-family: 'Cormorandt Garamond', serif;
+    font-size: large;
+    background-color: black;
+    height: fit-content;
+    width: 27px;
+    text-align: center;
+    border-radius: 50%;
+    transform: translate(-20px, -28px);
+}
+
+.navbar-lista {
+    margin-left: 40px;
+    font-size: larger;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 100%;
+}

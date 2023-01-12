@@ -1,0 +1,67 @@
+.carrito-container {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    text-align: center;
+}
+
+table th {
+    padding: 0px 5px;
+}
+
+table td {
+    padding: 5px;
+}
+
+.boton-carrito.chakra-button.boton-carrito.css-i857na {
+    background-color: transparent;
+    height: 75px;
+    width: 75px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: larger;
+    background-color: grey;
+    border: 1px solid rgb(229,214,108);
+    border-radius: 35%;
+    padding: 3px;
+    overflow: hidden;
+}
+
+.boton-carrito.chakra-button.boton-carrito.css-i857na:hover {
+    background-color: rgb(186, 186, 186);
+    transition: 0.5s;
+}
+
+.chakra-modal__content.css-19tsro {
+    background-image: url(../../Imagenes/FondoPapiro.png);
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.chakra-modal__header {
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+}
+
+.chakra-modal__close-btn.css-1ik4h6n {
+    color: white;
+}
+
+.titulo-carrito {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.carrito_vacio-container {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
+    font-size: x-large;
+    font-style: italic;
+    text-align: center;
+}

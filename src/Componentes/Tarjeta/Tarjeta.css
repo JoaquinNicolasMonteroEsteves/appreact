@@ -1,0 +1,91 @@
+.tarjeta-contenedor {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 16%;
+    /* height: 36vw; */
+    border: 1px solid black;
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 3px;
+}
+
+.tarjeta-nombre {
+    font-size: 2vw;
+    font-weight: bold;
+    height: 17%;
+    /* padding-top: 0.5vw; */
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: center;
+    line-height: 1;
+}
+
+.tarjeta-descripcion-contenedor {
+    font-size: 1.3vw;
+    font-weight: bold;
+    padding: 3px 5px;
+    height: 30%;
+}
+
+.tarjeta-imagen {
+    width: 70%;
+}
+
+.tarjeta-descripcion-costo {
+    display: flex;
+    /* width: fit-content; */
+    justify-content: space-around;
+    height: 30%;
+    font-size: 2vw;
+}
+
+.tarjeta-costo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-costo img {
+    height: 100%;
+}
+
+.tarjeta-costo p {
+    text-align: center;
+}
+
+.edad-comprar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+    width: 100%;
+    height: 13%;
+}
+
+.edad-comprar img {
+    height: 90%;
+}
+
+.edad-comprar button {
+    height: 60%;
+    position: relative;
+    bottom: 0%;
+    /* border: 1px solid black;
+    border-radius: 20%; */
+}
+
+.bu {
+    display: flex;
+    height: 35px;
+    font-size: x-large;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.bu-img, picture img {
+    height: 100%;
+}

@@ -1,0 +1,13 @@
+input[type="checkbox"] {
+    margin: 0px 5px;
+}
+
+label {
+    margin-right: 5px;
+}
+
+/* .filtros-contenedor {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+} */
