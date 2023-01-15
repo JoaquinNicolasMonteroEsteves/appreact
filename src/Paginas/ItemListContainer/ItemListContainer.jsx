@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './ItemListContainer.css'
-import FiltrarUnidades from '../FiltrarUnidades/FiltrarUnidades';
-import Tarjeta from '../Tarjeta/Tarjeta';
+import FiltrarUnidades from '../../Componentes/FiltrarUnidades/FiltrarUnidades';
+import Tarjeta from '../../Componentes/Tarjeta/Tarjeta';
 import Media from '../../Imagenes/LogoMedia.png';
 import Feudal from '../../Imagenes/LogoFeudal.png';
 import Castillos from '../../Imagenes/LogoCastillos.png';

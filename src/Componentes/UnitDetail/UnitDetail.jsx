@@ -7,11 +7,11 @@ const UnitDetail = ( {data} ) => {
     const item = data.find((item) => item.nombre === nombre)
 
     return (
-        <>
-            <h2 styles="none">{item.nombre}</h2>
+        <div className="unitdetail-container">
+            <h2>{item.nombre}</h2>
             <img src={item.imagen} />
             <p>{item.descripcion}</p>
-        </>
+        </div>
     )
 }
 

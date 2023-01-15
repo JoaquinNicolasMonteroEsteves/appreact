@@ -6,7 +6,7 @@ import carrito from './carrito.json'
 import { Routes, Route } from 'react-router-dom'
 import Inicio from './Paginas/Inicio/Inicio.jsx'
 import Civilizaciones from './Paginas/Civilizaciones/Civilizaciones.jsx'
-import Tienda from '/src/Paginas/Tienda/Tienda.jsx'
+import ItemListContainer from './Paginas/ItemListContainer/ItemListContainer'
 import UnitDetail from './Componentes/UnitDetail/UnitDetail.jsx'
 
 function App() {
@@ -18,7 +18,7 @@ return (
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/civilizaciones" element={<Civilizaciones />} />
-          <Route path="/tienda" element={<Tienda />} />
+          <Route path="/tienda" element={<ItemListContainer />} />
           <Route path="/tienda/:nombre" element={<UnitDetail data={unidades}/>}/>
         </Routes>
       </div>
