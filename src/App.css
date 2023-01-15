@@ -8,16 +8,5 @@
 
 .App {
     height: auto;
-    background-color: rgb(215,171,115);
-}
-
-.main-contenedor {
-    min-height: 300px;
     background-color: rgb(92, 92, 92);
-    color: white;
-    padding: 1%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
 }

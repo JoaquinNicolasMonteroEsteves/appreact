@@ -1,7 +1,8 @@
 import React from 'react';
 import './Tarjeta.css';
 import comprar from '../../Imagenes/AgregarCarrito.png'
-import carrito from '../../carrito.json'
+import { agregarCarrito } from '../Navbar/Navbar';
+import { Link } from 'react-router-dom';
 
 function Tarjeta({nombre, cnombre, imagen, valor, descripcion, edad, compra}) {
 
@@ -28,18 +29,18 @@ function bla() {
     return mostrar
 }
 
-const agregarCarrito = (unidad) => {
-    console.log(carrito.length)
-    carrito.push(unidad)
-    console.log(carrito.length)
-  }  
+// const agregarCarrito = (unidad) => {
+//     console.log(carrito.length)
+//     carrito.push(unidad)
+//     console.log(carrito.length)
+//   }  
 
 return  <div className={`tarjeta-contenedor tarjeta-${cnombre}`}>
             <div className='tarjeta-nombre'>
                 {nombre}
             </div>
             <div className="tarjeta-imagen">
-                <img src={imagen}/>
+                <Link to={`/tienda/${nombre}`}><img src={imagen}/></Link>
             </div>
             <div className='tarjeta-descripcion-contenedor'>
                 <div className='tarjeta-descripcion-costo' id={nombre}>

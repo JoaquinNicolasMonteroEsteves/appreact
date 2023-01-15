@@ -24,12 +24,12 @@ li:active {
     color: white;
 }
 
-.navbar-contenedor {
+nav {
     background-image: url(../../Imagenes/AoE2-Banner.webp);
     background-size: 100%;
     background-position: center;
     background-repeat: repeat-x;
-    height: 150px;
+    height: 20vh;
     width: 100%;
     color: white;
     display: flex;
@@ -66,6 +66,6 @@ li:active {
     align-items: center;
 }
 
-.navbar-logo {
+.link-logo, .link-logo img {
     height: 100%;
 }

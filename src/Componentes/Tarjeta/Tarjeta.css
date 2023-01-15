@@ -1,7 +1,7 @@
 .tarjeta-contenedor {
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
-    width: 16%;
+    width: 12%;
     /* height: 36vw; */
     border: 1px solid black;
     border-radius: 1%;
@@ -14,7 +14,7 @@
 }
 
 .tarjeta-nombre {
-    font-size: 2vw;
+    font-size: 1.7vw;
     font-weight: bold;
     height: 17%;
     /* padding-top: 0.5vw; */
@@ -25,14 +25,14 @@
 }
 
 .tarjeta-descripcion-contenedor {
-    font-size: 1.3vw;
+    font-size: 1vw;
     font-weight: bold;
     padding: 3px 5px;
     height: 30%;
 }
 
 .tarjeta-imagen {
-    width: 70%;
+    width: 80%;
 }
 
 .tarjeta-descripcion-costo {
@@ -40,7 +40,7 @@
     /* width: fit-content; */
     justify-content: space-around;
     height: 30%;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .tarjeta-costo {

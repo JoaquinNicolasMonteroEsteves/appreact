@@ -9,7 +9,7 @@
         "oro": "",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/Aldeanx.png",
+    "imagen": "/src/Imagenes/Unidades/Aldeanx.png",
     "descripcion": "Unidad básica. Recoge recursos y construye edificios.",
     "edad": "media"
 },
@@ -23,7 +23,7 @@
         "oro": "20",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/Milicia.png",
+    "imagen": "/src/Imagenes/Unidades/Milicia.png",
     "descripcion": "Infantería liviana. Primera unidad militar disponible.",
     "edad": "media"
     },
@@ -37,7 +37,7 @@
         "oro": "",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/Lancero.png",
+    "imagen": "/src/Imagenes/Unidades/Lancero.png",
     "descripcion": "Infantería liviana efectiva contra caballería.",
     "edad": "feudal"
     },
@@ -51,7 +51,7 @@
         "oro": "50",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/ExploradorAguila.png",
+    "imagen": "/src/Imagenes/Unidades/ExploradorAguila.png",
     "descripcion": "Infantería de alta movilidad, efectiva contra arqueros.",
     "edad": "feudal"
     },
@@ -65,7 +65,7 @@
         "oro": "45",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/Arquero.png",
+    "imagen": "/src/Imagenes/Unidades/Arquero.png",
     "descripcion": "Arquero a pie. Unidad de alcance efectiva contra infanteria.",
     "edad": "feudal"
     },
@@ -79,7 +79,7 @@
         "oro": "",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/Guerrillero.png",
+    "imagen": "/src/Imagenes/Unidades/Guerrillero.png",
     "descripcion": "Unidad de alcance eficaz contra arqueros y débil contra caballería.",
     "edad": "feudal"
     },
@@ -93,7 +93,7 @@
         "oro": "",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/Explorador.png",
+    "imagen": "/src/Imagenes/Unidades/Explorador.png",
     "descripcion": "Unidad montada de gran visión. Buena para explorar.",
     "edad": "feudal"
     },
@@ -107,7 +107,7 @@
         "oro": "",
         "piedra": "125"
     },
-    "imagen": "./src/Imagenes/Unidades/TorreGuardia.png",
+    "imagen": "/src/Imagenes/Unidades/TorreGuardia.png",
     "descripcion": "Edificio que dispara flechas. Permite guarecer unidades.",
     "edad": "feudal"
     },
@@ -121,7 +121,7 @@
         "oro": "60",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/ArqueroCaballo.png",
+    "imagen": "/src/Imagenes/Unidades/ArqueroCaballo.png",
     "descripcion": "Arquero montado. Eficaz por su ataque y movilidad.",
     "edad": "castillos"
     },
@@ -135,7 +135,7 @@
         "oro": "75",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/Jinete.png",
+    "imagen": "/src/Imagenes/Unidades/Jinete.png",
     "descripcion": "Caballería pesada. Fuerte contra arqueros e infantería.",
     "edad": "castillos"
     },
@@ -149,7 +149,7 @@
         "oro": "60",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/JineteCamello.png",
+    "imagen": "/src/Imagenes/Unidades/JineteCamello.png",
     "descripcion": "Unidad montada eficaz contra otras unidades montadas.",
     "edad": "castillos"
     },
@@ -163,7 +163,7 @@
         "oro": "40",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/LanceroEstepario.png",
+    "imagen": "/src/Imagenes/Unidades/LanceroEstepario.png",
     "descripcion": "Caballería liviana con rango de ataque. Fuerte en grupos.",
     "edad": "castillos"
     },
@@ -177,7 +177,7 @@
         "oro": "70",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/ElefanteCombate.png",
+    "imagen": "/src/Imagenes/Unidades/ElefanteCombate.png",
     "descripcion": "Unidad lenta pero pesada, de alto ataque y vida.",
     "edad": "castillos"
     },
@@ -191,7 +191,7 @@
         "oro": "100",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/Monje.png",
+    "imagen": "/src/Imagenes/Unidades/Monje.png",
     "descripcion": "Capaz de curar unidades propias y convertir las enemigas.",
     "edad": "castillos"
     },
@@ -205,7 +205,7 @@
         "oro": "",
         "piedra": "650"
     },
-    "imagen": "./src/Imagenes/Unidades/Castillo.png",
+    "imagen": "/src/Imagenes/Unidades/Castillo.png",
     "descripcion": "Posee gran ataque, guarece unidades y fabrica la unidad única.",
     "edad": "castillos"
     },
@@ -219,7 +219,7 @@
         "oro": "75",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/Ariete.png",
+    "imagen": "/src/Imagenes/Unidades/Ariete.png",
     "descripcion": "Asedio lento pero efetivo contra edificios y otro asedio.",
     "edad": "castillos"
     },
@@ -233,7 +233,7 @@
         "oro": "135",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/Mangonel.png",
+    "imagen": "/src/Imagenes/Unidades/Mangonel.png",
     "descripcion": "Arroja varios proyectiles. Efectivo contra edificios y arqueros.",
     "edad": "castillos"
     },
@@ -247,7 +247,7 @@
         "oro": "75 ",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/Escorpión.png",
+    "imagen": "/src/Imagenes/Unidades/Escorpión.png",
     "descripcion": "Dispara un único proyectil. Efectiva contra grupos grandes.",
     "edad": "castillos"
     },
@@ -261,7 +261,7 @@
         "oro": "35",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/Condotiero.png",
+    "imagen": "/src/Imagenes/Unidades/Condotiero.png",
     "descripcion": "Infantería rápida con bonificación contra unidades de asedio.",
     "edad": "imperial"
     },
@@ -275,7 +275,7 @@
         "oro": "50",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/ArtilleroManual.png",
+    "imagen": "/src/Imagenes/Unidades/ArtilleroManual.png",
     "descripcion": "Unidad de rango pero imprecisa. Fuerte contra infantería.",
     "edad": "imperial"
     },
@@ -289,7 +289,7 @@
         "oro": "225 ",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/CañónAsedio.png",
+    "imagen": "/src/Imagenes/Unidades/CañónAsedio.png",
     "descripcion": "Asedio poderoso y de gran alcance. Efectivo contra edificios.",
     "edad": "imperial"
     },
@@ -303,7 +303,7 @@
         "oro": "100",
         "piedra": "125"
     },
-    "imagen": "./src/Imagenes/Unidades/TorreBombardeo.png",
+    "imagen": "/src/Imagenes/Unidades/TorreBombardeo.png",
     "descripcion": "Torre que arroja un proyectil. De gran ataque.",
     "edad": "imperial"
     },
@@ -317,7 +317,7 @@
         "oro": "200 ",
         "piedra": ""
     },
-    "imagen": "./src/Imagenes/Unidades/LanzapiedrasDesarmado.png",
+    "imagen": "/src/Imagenes/Unidades/LanzapiedrasDesarmado.png",
     "descripcion": "Arma empacable de larga distancia efectiva contra edificios.",
     "edad": "imperial"
     }
