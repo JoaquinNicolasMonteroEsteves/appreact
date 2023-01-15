@@ -6,7 +6,7 @@ import carrito from './carrito.json'
 import { Routes, Route } from 'react-router-dom'
 import Inicio from './Paginas/Inicio/Inicio.jsx'
 import Civilizaciones from './Paginas/Civilizaciones/Civilizaciones.jsx'
-import Tienda from './Paginas/Tienda/Tienda.jsx'
+import Tienda from '/src/Paginas/Tienda/Tienda.jsx'
 import UnitDetail from './Componentes/UnitDetail/UnitDetail.jsx'
 
 function App() {
