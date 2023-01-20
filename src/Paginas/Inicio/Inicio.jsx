@@ -2,7 +2,7 @@ import React from "react";
 
 const Inicio = () => {
     return (
-        <h1>muchAAAACHOooo</h1>
+        <h1>Página principal</h1>
     )
 }
 

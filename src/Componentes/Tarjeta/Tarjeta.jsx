@@ -29,12 +29,6 @@ function bla() {
     return mostrar
 }
 
-// const agregarCarrito = (unidad) => {
-//     console.log(carrito.length)
-//     carrito.push(unidad)
-//     console.log(carrito.length)
-//   }  
-
 return  <div className={`tarjeta-contenedor tarjeta-${cnombre}`}>
             <div className='tarjeta-nombre'>
                 {nombre}
