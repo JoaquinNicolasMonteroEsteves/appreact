@@ -19,7 +19,8 @@ return (
           <Route path="/" element={<Inicio />} />
           <Route path="/civilizaciones" element={<Civilizaciones />} />
           <Route path="/tienda" element={<ItemListContainer />} />
-          <Route path="/tienda/:nombre" element={<UnitDetail data={unidades}/>}/>
+          <Route path="/tienda/:edad" element={<ItemListContainer />} />
+          <Route path="/tienda/:edad/:nombre" element={<UnitDetail data={unidades}/>}/>
         </Routes>
       </div>
     </div>

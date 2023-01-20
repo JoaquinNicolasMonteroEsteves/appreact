@@ -43,6 +43,7 @@ function ItemListContainer()  {
     const menuUnidades = [...new Set(unidades.map((val) => val.edad))]
 
     const filtroUnidadNueva = () => {
+
     let seleccionados = [...document.querySelectorAll('input[name=categoria]:checked')]
     if(seleccionados.length>0) {
             let catSel = seleccionados.map((x) => x.value)
@@ -73,7 +74,8 @@ function ItemListContainer()  {
                         imagen={item.imagen}
                         valor={item.costoTarjeta}
                         descripcion={item.descripcion}
-                        edad={edadDisponible(item.edad)}
+                        edadLogo={edadDisponible(item.edad)}
+                        edad={item.edad}
                         compra={item}
                     />)
                     }

@@ -4,7 +4,7 @@ import comprar from '../../Imagenes/AgregarCarrito.png'
 import { agregarCarrito } from '../Navbar/Navbar';
 import { Link } from 'react-router-dom';
 
-function Tarjeta({nombre, cnombre, imagen, valor, descripcion, edad, compra}) {
+function Tarjeta({nombre, cnombre, imagen, valor, descripcion, edad, edadLogo, compra}) {
 
 function mostrarCostoImagen(valor, recurso) {
     let src = `/src/Imagenes/Recursos/${recurso}.png`
@@ -34,7 +34,7 @@ return  <div className={`tarjeta-contenedor tarjeta-${cnombre}`}>
                 {nombre}
             </div>
             <div className="tarjeta-imagen">
-                <Link to={`/tienda/${nombre}`}><img src={imagen}/></Link>
+                <Link to={`/tienda/${edad}/${nombre}`}><img src={imagen}/></Link>
             </div>
             <div className='tarjeta-descripcion-contenedor'>
                 <div className='tarjeta-descripcion-costo' id={nombre}>
@@ -43,7 +43,7 @@ return  <div className={`tarjeta-contenedor tarjeta-${cnombre}`}>
                 <div className='tarjeta-descripcion'>{descripcion}</div>
             </div>
             <div className="edad-comprar">
-                <img src={edad} alt={`Imagen de ${nombre}`} />
+                <img src={edadLogo} alt={`Imagen de ${nombre}`} />
                 <button onClick={() => agregarCarrito(compra)}><img src={comprar}/></button>
             </div>
         </div>

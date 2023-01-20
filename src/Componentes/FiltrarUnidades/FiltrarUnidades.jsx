@@ -14,7 +14,9 @@ const FiltrarUnidades = ({filtroUnidadNueva, menuUnidades}) => {
             <div className="filtros-contenedor">
                 {menuUnidades.map((valor, index) => {
                     return (
-                        <label className="checkbox" onChange={() => filtroUnidadNueva(valor)}><input id={"edad"+valor} type="checkbox" name="categoria" value={valor} key={index}/>{Capitalize(valor)}</label>
+                            <label className="checkbox" onChange={() => filtroUnidadNueva(valor)}>
+                                <input id={"edad"+valor} type="checkbox" name="categoria" value={valor} key={index} />{Capitalize(valor)}
+                            </label>
                     )
                 })}
             </div>
