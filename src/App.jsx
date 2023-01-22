@@ -8,12 +8,13 @@ import Inicio from './Paginas/Inicio/Inicio.jsx'
 import Civilizaciones from './Paginas/Civilizaciones/Civilizaciones.jsx'
 import ItemListContainer from './Paginas/ItemListContainer/ItemListContainer'
 import UnitDetail from './Componentes/UnitDetail/UnitDetail.jsx'
+import { CartProvider } from './Context/CartContext.jsx'
 
 function App() {
 return (
+  <CartProvider>
     <div className="App">
-      <Navbar 
-        cart={carrito.length} />
+      <Navbar />
       <div>
         <Routes>
           <Route path="/" element={<Inicio />} />
@@ -24,6 +25,7 @@ return (
         </Routes>
       </div>
     </div>
+  </CartProvider>
   )
 }
 

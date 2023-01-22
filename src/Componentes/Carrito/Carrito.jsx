@@ -1,13 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import './Carrito.css'
 import {Modal,ModalOverlay,ModalContent,ModalHeader,ModalFooter,ModalBody,ModalCloseButton,useDisclosure,Button} from '@chakra-ui/react'
 import LogoCarrito from '../../Imagenes/carro2.png'
 import LogoCarreta from '../../Imagenes/TradeCart.gif'
 import carrito from '../../carrito.json'
+import { cartContext } from '../../Context/CartContext';
 
 function Carrito({}) {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [carroDeCompras, setCarroDeCompras] = useState([])
+
+    const [cart, setCart] = useContext(cartContext)
+    const totalMadera = cart.reduce((acc, curr) => acc + curr.precioMadera ,0)
+    const totalAlimento = cart.reduce((acc, curr) => acc + curr.precioAlimento ,0)
+    const totalOro = cart.reduce((acc, curr) => acc + curr.precioOro ,0)
+    const totalPiedra = cart.reduce((acc, curr) => acc + curr.precioPiedra ,0)
+    const precioTotal = `${totalMadera} ${totalAlimento} ${totalOro} ${totalPiedra}`
+    
 
     // const getCarro = () => {
     //     fetch('src/carrito.json')
@@ -40,8 +49,10 @@ function Carrito({}) {
     //     return mostrar
     // }
 
+
+
     const mostrarCarrito = () => {
-        if (carrito.length>0) {
+        if (cart.length>0) {
             return (
                 <div className='carrito-container'>
                     <table>
@@ -54,18 +65,22 @@ function Carrito({}) {
                             </tr>
                         </thead>
                         <tbody>
-                            {carroDeCompras.map((unidad) => {
+                            {cart.map((unidad) => {
                                 return (
                                 <tr>
                                     <td>{unidad.nombre}</td>
-                                    <td>{unidad.apellido}<img src={unidad.imagen}/></td>
-                                    <td>{unidad.edad}</td>
+                                    <td><img className="imagen-tabla" src={unidad.imagen} /></td>
+                                    <td></td>
                                     <td></td>
                                     {/* <td>{bla}</td>
                                     <td>{(carrito.find((x) => x.nombre == unidad.nombre) == false ? 1 : "#")}</td> */}
                                 </tr>
                                 ) 
                             })}
+                                <tr>
+                                    <td><h3>Total a pagar:</h3></td>
+                                    <td>{precioTotal}</td>
+                                </tr>
                         </tbody>
                     </table>
                 </div>
@@ -83,7 +98,10 @@ function Carrito({}) {
 
     return (
     <>
-        <Button className="boton-carrito" onClick={onOpen}><img src={LogoCarrito}/></Button>
+        <Button className="boton-carrito" onClick={onOpen}>
+            <img src={LogoCarrito}/>
+        </Button>
+            <span id="span-carrito">{cart.length}</span>
 
         <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />

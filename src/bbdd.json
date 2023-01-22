@@ -4,10 +4,10 @@
     "nombre": "Aldeano",
     "cnombre": "aldeano",
     "costoTarjeta": {
-        "madera": "",
+        "madera": "0",
         "alimento": "50",
-        "oro": "",
-        "piedra": ""
+        "oro": "0",
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/Aldeanx.png",
     "descripcion": "Unidad básica. Recoge recursos y construye edificios.",
@@ -18,10 +18,10 @@
     "nombre": "Milicia",
     "cnombre": "milicia",
     "costoTarjeta": {
-        "madera": "",
+        "madera": "0",
         "alimento": "60",
         "oro": "20",
-        "piedra": ""
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/Milicia.png",
     "descripcion": "Infantería liviana. Primera unidad militar disponible.",
@@ -34,8 +34,8 @@
     "costoTarjeta": {
         "madera": "25",
         "alimento": "35",
-        "oro": "",
-        "piedra": ""
+        "oro": "0",
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/Lancero.png",
     "descripcion": "Infantería liviana efectiva contra caballería.",
@@ -46,10 +46,10 @@
     "nombre": "Explorador águila",
     "cnombre": "exploradoraguila",
     "costoTarjeta": {
-        "madera": "",
+        "madera": "0",
         "alimento": "20",
         "oro": "50",
-        "piedra": ""
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/ExploradorAguila.png",
     "descripcion": "Infantería de alta movilidad, efectiva contra arqueros.",
@@ -61,9 +61,9 @@
     "cnombre": "arquero",
     "costoTarjeta": {
         "madera": "20",
-        "alimento": "",
+        "alimento": "0",
         "oro": "45",
-        "piedra": ""
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/Arquero.png",
     "descripcion": "Arquero a pie. Unidad de alcance efectiva contra infanteria.",
@@ -76,8 +76,8 @@
     "costoTarjeta": {
         "madera": "25",
         "alimento": "35",
-        "oro": "",
-        "piedra": ""
+        "oro": "0",
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/Guerrillero.png",
     "descripcion": "Unidad de alcance eficaz contra arqueros y débil contra caballería.",
@@ -88,10 +88,10 @@
     "nombre": "Explorador",
     "cnombre": "explorador",
     "costoTarjeta": {
-        "madera": "",
+        "madera": "0",
         "alimento": "80",
-        "oro": "",
-        "piedra": ""
+        "oro": "0",
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/Explorador.png",
     "descripcion": "Unidad montada de gran visión. Buena para explorar.",
@@ -103,8 +103,8 @@
     "cnombre": "torreguardia",
     "costoTarjeta": {
         "madera": "50",
-        "alimento": "",
-        "oro": "",
+        "alimento": "0",
+        "oro": "0",
         "piedra": "125"
     },
     "imagen": "/src/Imagenes/Unidades/TorreGuardia.png",
@@ -117,9 +117,9 @@
     "cnombre": "arquerocaballo",
     "costoTarjeta": {
         "madera": "40",
-        "alimento": "",
+        "alimento": "0",
         "oro": "60",
-        "piedra": ""
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/ArqueroCaballo.png",
     "descripcion": "Arquero montado. Eficaz por su ataque y movilidad.",
@@ -130,10 +130,10 @@
     "nombre": "Jinete",
     "cnombre": "jinete",
     "costoTarjeta": {
-        "madera": "",
+        "madera": "0",
         "alimento": "60",
         "oro": "75",
-        "piedra": ""
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/Jinete.png",
     "descripcion": "Caballería pesada. Fuerte contra arqueros e infantería.",
@@ -144,10 +144,10 @@
     "nombre": "Jinete a camello",
     "cnombre": "jinetecamello",
     "costoTarjeta": {
-        "madera": "",
+        "madera": "0",
         "alimento": "55",
         "oro": "60",
-        "piedra": ""
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/JineteCamello.png",
     "descripcion": "Unidad montada eficaz contra otras unidades montadas.",
@@ -158,10 +158,10 @@
     "nombre": "Lancero estepario",
     "cnombre": "lanceroestepario",
     "costoTarjeta": {
-        "madera": "",
+        "madera": "0",
         "alimento": "70",
         "oro": "40",
-        "piedra": ""
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/LanceroEstepario.png",
     "descripcion": "Caballería liviana con rango de ataque. Fuerte en grupos.",
@@ -172,10 +172,10 @@
     "nombre": "Elefante de batalla",
     "cnombre": "elefantebatalla",
     "costoTarjeta": {
-        "madera": "",
+        "madera": "0",
         "alimento": "110",
         "oro": "70",
-        "piedra": ""
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/ElefanteCombate.png",
     "descripcion": "Unidad lenta pero pesada, de alto ataque y vida.",
@@ -186,10 +186,10 @@
     "nombre": "Monje",
     "cnombre": "monje",
     "costoTarjeta": {
-        "madera": "",
-        "alimento": "",
+        "madera": "0",
+        "alimento": "0",
         "oro": "100",
-        "piedra": ""
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/Monje.png",
     "descripcion": "Capaz de curar unidades propias y convertir las enemigas.",
@@ -200,9 +200,9 @@
     "nombre": "Castillo",
     "cnombre": "castillo",
     "costoTarjeta": {
-        "madera": "",
-        "alimento": "",
-        "oro": "",
+        "madera": "0",
+        "alimento": "0",
+        "oro": "0",
         "piedra": "650"
     },
     "imagen": "/src/Imagenes/Unidades/Castillo.png",
@@ -215,9 +215,9 @@
     "cnombre": "ariete",
     "costoTarjeta": {
         "madera": "160",
-        "alimento": "",
+        "alimento": "0",
         "oro": "75",
-        "piedra": ""
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/Ariete.png",
     "descripcion": "Asedio lento pero efetivo contra edificios y otro asedio.",
@@ -229,9 +229,9 @@
     "cnombre": "mangonel",
     "costoTarjeta": {
         "madera": "160",
-        "alimento": "",
+        "alimento": "0",
         "oro": "135",
-        "piedra": ""
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/Mangonel.png",
     "descripcion": "Arroja varios proyectiles. Efectivo contra edificios y arqueros.",
@@ -243,9 +243,9 @@
     "cnombre": "escorpión",
     "costoTarjeta": {
         "madera": "75",
-        "alimento": "",
+        "alimento": "0",
         "oro": "75 ",
-        "piedra": ""
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/Escorpión.png",
     "descripcion": "Dispara un único proyectil. Efectiva contra grupos grandes.",
@@ -256,10 +256,10 @@
     "nombre": "Condotiero",
     "cnombre": "condotiero",
     "costoTarjeta": {
-        "madera": "",
+        "madera": "0",
         "alimento": "50",
         "oro": "35",
-        "piedra": ""
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/Condotiero.png",
     "descripcion": "Infantería rápida con bonificación contra unidades de asedio.",
@@ -270,10 +270,10 @@
     "nombre": "Artillero manual",
     "cnombre": "artilleromanual",
     "costoTarjeta": {
-        "madera": "",
+        "madera": "0",
         "alimento": "45",
         "oro": "50",
-        "piedra": ""
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/ArtilleroManual.png",
     "descripcion": "Unidad de rango pero imprecisa. Fuerte contra infantería.",
@@ -285,9 +285,9 @@
     "cnombre": "cañonasedio",
     "costoTarjeta": {
         "madera": "225",
-        "alimento": "",
+        "alimento": "0",
         "oro": "225 ",
-        "piedra": ""
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/CañónAsedio.png",
     "descripcion": "Asedio poderoso y de gran alcance. Efectivo contra edificios.",
@@ -298,8 +298,8 @@
     "nombre": "Torre de bombardeo",
     "cnombre": "torrebombardeo",
     "costoTarjeta": {
-        "madera": "",
-        "alimento": "",
+        "madera": "0",
+        "alimento": "0",
         "oro": "100",
         "piedra": "125"
     },
@@ -313,9 +313,9 @@
     "cnombre": "lanzapiedras",
     "costoTarjeta": {
         "madera": "200",
-        "alimento": "",
+        "alimento": "0",
         "oro": "200 ",
-        "piedra": ""
+        "piedra": "0"
     },
     "imagen": "/src/Imagenes/Unidades/LanzapiedrasDesarmado.png",
     "descripcion": "Arma empacable de larga distancia efectiva contra edificios.",
