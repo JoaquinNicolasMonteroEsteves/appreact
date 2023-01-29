@@ -7,6 +7,8 @@ import Feudal from '../../Imagenes/LogoFeudal.png';
 import Castillos from '../../Imagenes/LogoCastillos.png';
 import Imperial from '../../Imagenes/LogoImperial.png';
 import unidades from '../../bbdd.json'
+import { db } from '../../db/firebase-config';
+import { collection, getDocs, orderBy, query } from "firebase/firestore";
 
 function ItemListContainer()  {
 
@@ -29,33 +31,51 @@ function ItemListContainer()  {
 
     const [unidad, setUnidad] = useState([])
 
-    const cargarUnidades = () => {
-        fetch("/src/bbdd.json")
-            .then((res) => res.json())
-            .then((data) => setUnidad(data))
-            .catch((err) => console.log(err))
+    const itemsCollectionRef = query(collection(db, "unidades"), orderBy("nombre"))
+    const getUnidades = async () => {
+      const querySnapshot = await getDocs(itemsCollectionRef);
+      const docs = querySnapshot.docs.map((doc) => doc.data());
+      setUnidad(docs)
     }
+
+    const [edades, setEdades] = useState([])
+
+    const itemsCollectionRef2 = query(collection(db, "unidades"), orderBy("edadOrden"))
+    const getUnidades2 = async () => {
+      const querySnapshot = await getDocs(itemsCollectionRef2);
+      const docs = querySnapshot.docs.map((doc) => doc.data());
+      setEdades(docs)
+    }
+
+
+    // const cargarUnidades = () => {
+    //     fetch(itemsCollectionRef)
+    //         .then((res) => res.json())
+    //         .then((data) => setUnidad(data))
+    //         .catch((err) => console.log(err))
+    // }
 
     useEffect(() => {
-        cargarUnidades();
+        getUnidades();
+        getUnidades2();
     }, [])
 
-    const menuUnidades = [...new Set(unidades.map((val) => val.edad))]
+    const menuUnidades = [...new Set(edades.map((val) => val.edad))]
 
     const filtroUnidadNueva = () => {
-
-    let seleccionados = [...document.querySelectorAll('input[name=categoria]:checked')]
-    if(seleccionados.length>0) {
-            let catSel = seleccionados.map((x) => x.value)
-            let unidadesFiltradas = []
-            catSel.forEach((y) => {
-            let match = unidades.filter((unidad) => unidad.edad == y)
-            match.forEach((c) => unidadesFiltradas.push(c))
-            setUnidad(unidadesFiltradas)
-            })
-        } else {
-            setUnidad(unidades)
-    }
+      let seleccionados = [...document.querySelectorAll('input[name=categoria]:checked')]
+      if(seleccionados.length>0) {
+        debugger
+              let catSel = seleccionados.map((x) => x.value)
+              let unidadesFiltradas = []
+              catSel.forEach((y) => {
+              let match = unidad.filter((unidad) => unidad.edad == y)
+              match.forEach((c) => unidadesFiltradas.push(c))
+              setUnidad(unidadesFiltradas)
+              })
+          } else {
+              getUnidades()
+      }
     }
 
     return  ( <div className='itemlistcontainer-container'>

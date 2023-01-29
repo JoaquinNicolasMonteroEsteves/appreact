@@ -1,5 +1,298 @@
 [
     {
-        
+        "id": 1,
+        "nombre": "Aztecas",
+        "imagen": "/src/Imagenes/Civilizaciones/aztecas.png",
+        "especialidad": "Infantería y Monjes",
+        "descripcion": "Sus aldeanos cargan más recursos, las unidades militares son más rápidas, arrancan con oro extra y los monjes ganan +5 de vida por tecnología desarrollada en el monasterio."
+    },
+    {
+        "id": 2,
+        "nombre": "Bengalíes",
+        "imagen": "/src/Imagenes/Civilizaciones/bengalies.png",
+        "especialidad": "Elefantes y Naval",
+        "descripcion": "Las unidades montadas a elefantes reciben menos daño, reciben aldeanos extra al avanzar de edad, sus barcos recuperan vida periódicamente y los monjes poseen más armadura."
+    },
+    {
+        "id": 3,
+        "nombre": "Bereberes",
+        "imagen": "/src/Imagenes/Civilizaciones/bereberes.png",
+        "especialidad": "Caballería y Naval",
+        "descripcion": "Sus aldeanos y barcos se mueven más rápido y las unidades del estable son más baratas."
+    },
+    {
+        "id": 4,
+        "nombre": "Birmanos",
+        "imagen": "/src/Imagenes/Civilizaciones/birmanos.png",
+        "especialidad": "Monjes y Elefantes",
+        "descripcion": "Las tecnologías de madera son gratuitas, su infantería posee más ataque al avanzar de edad, las tecnologías del monasterio cuestan la mitad, y sus Elefantes de Guerra poseen más armadura."
+    },
+    {
+        "id": 5,
+        "nombre": "Bizantinos",
+        "imagen": "/src/Imagenes/Civilizaciones/bizantinos.png",
+        "especialidad": "Defensiva",
+        "descripcion": "Los edificios poseen más puntos de resistencia al avanzar de edad y obtienen mayor visión gratuitamente, las unidades 'basura' son más baratas y avanzar a la edad Imperial es más barato."
+    },
+    {
+        "id": 6,
+        "nombre": "Bohemios",
+        "imagen": "/src/Imagenes/Civilizaciones/bohemios.png",
+        "especialidad": "Pólvora y Monjes",
+        "descripcion": "La Herrería y Universidad cuestan menos madera, pueden desarrollar Química y Artilleros Manuales en la edad de los Castillos, las tecnologías del campamento minero son gratis y los aldeanos se afectan por tecnologías del monasterio."
+    },
+    {
+        "id": 7,
+        "nombre": "Borgoñones",
+        "imagen": "/src/Imagenes/Civilizaciones/borgoniones.png",
+        "especialidad": "Caballería",
+        "descripcion": "Las mejoras económicas se pueden desarrollar una edad antes y cuestan menos, las tecnologías del Establo cuestan menos oro, la mejora de Caballeros está disponible en la edad de los Castillos y las unidades de pólvora poseen más ataque."
+    },
+    {
+        "id": 8,
+        "nombre": "Britanos",
+        "imagen": "/src/Imagenes/Civilizaciones/britanos.png",
+        "especialidad": "Arqueros",
+        "descripcion": "Los Centros Urbanos cuestan menos madera, los arqueros a pie poseen +1 de alcance por edad (a partir de Castillos) y los pastores trabajan más rápido."
+    },
+    {
+        "id": 9,
+        "nombre": "Búlgaros",
+        "imagen": "/src/Imagenes/Civilizaciones/bulgaros.png",
+        "especialidad": "Infantería y Caballería",
+        "descripcion": "La línea de la Milicia se mejora automáticamente por edad, las tecnologías de Herrería y Taller de Aserio cuestan menos alimento y sus Centros Urbanos cuestan menos piedra."
+    },
+    {
+        "id": 10,
+        "nombre": "Celtas",
+        "imagen": "/src/Imagenes/Civilizaciones/celtas.png",
+        "especialidad": "Infantería y Armas de Asedio",
+        "descripcion": ""
+    },
+    {
+        "id": 11,
+        "nombre": "Chinos",
+        "imagen": "/src/Imagenes/Civilizaciones/chinos.png",
+        "especialidad": "Arqueros",
+        "descripcion": ""
+    },
+    {
+        "id": 12,
+        "nombre": "Coreanos",
+        "imagen": "/src/Imagenes/Civilizaciones/coreanos.png",
+        "especialidad": "Defensiva y Naval",
+        "descripcion": ""
+    },
+    {
+        "id": 13,
+        "nombre": "Cumanos",
+        "imagen": "/src/Imagenes/Civilizaciones/cumanos.png",
+        "especialidad": "Caballería",
+        "descripcion": ""
+    },
+    {
+        "id": 14,
+        "nombre": "Dravídicos",
+        "imagen": "/src/Imagenes/Civilizaciones/dravidicos.png",
+        "especialidad": "Naval e Infantería",
+        "descripcion": ""
+    },
+    {
+        "id": 15,
+        "nombre": "Eslavos",
+        "imagen": "/src/Imagenes/Civilizaciones/eslavos.png",
+        "especialidad": "Infantería y Armas de Asedio",
+        "descripcion": ""
+    },
+    {
+        "id": 16,
+        "nombre": "Españoles",
+        "imagen": "/src/Imagenes/Civilizaciones/españoles.png",
+        "especialidad": "Monjes y Pólvora",
+        "descripcion": ""
+    },
+    {
+        "id": 17,
+        "nombre": "Etíopes",
+        "imagen": "/src/Imagenes/Civilizaciones/etiopes.png",
+        "especialidad": "Arqueros y Armas de Asedio",
+        "descripcion": ""
+    },
+    {
+        "id": 18,
+        "nombre": "Francos",
+        "imagen": "/src/Imagenes/Civilizaciones/francos.png",
+        "especialidad": "Caballería",
+        "descripcion": ""
+    },
+    {
+        "id": 19,
+        "nombre": "Godos",
+        "imagen": "/src/Imagenes/Civilizaciones/godos.png",
+        "especialidad": "Infantería",
+        "descripcion": ""
+    },
+    {
+        "id": 20,
+        "nombre": "Gurjaras",
+        "imagen": "/src/Imagenes/Civilizaciones/gurjaras.png",
+        "especialidad": "Caballería y Camellos",
+        "descripcion": ""
+    },
+    {
+        "id": 21,
+        "nombre": "Hunos",
+        "imagen": "/src/Imagenes/Civilizaciones/hunos.png",
+        "especialidad": "Caballería",
+        "descripcion": ""
+    },
+    {
+        "id": 22,
+        "nombre": "Incas",
+        "imagen": "/src/Imagenes/Civilizaciones/incas.png",
+        "especialidad": "Infantería",
+        "descripcion": ""
+    },
+    {
+        "id": 23,
+        "nombre": "Indostanos",
+        "imagen": "/src/Imagenes/Civilizaciones/indostanos.png",
+        "especialidad": "Camellos y Pólvora",
+        "descripcion": ""
+    },
+    {
+        "id": 24,
+        "nombre": "Italianos",
+        "imagen": "/src/Imagenes/Civilizaciones/italianos.png",
+        "especialidad": "Arqueros y Barcos",
+        "descripcion": ""
+    },
+    {
+        "id": 25,
+        "nombre": "Japoneses",
+        "imagen": "/src/Imagenes/Civilizaciones/japoneses.png",
+        "especialidad": "Infantería",
+        "descripcion": ""
+    },
+    {
+        "id": 26,
+        "nombre": "Jemeres",
+        "imagen": "/src/Imagenes/Civilizaciones/jemeres.png",
+        "especialidad": "Elefantes y Armas de Asedio",
+        "descripcion": ""
+    },
+    {
+        "id": 27,
+        "nombre": "Lituanos",
+        "imagen": "/src/Imagenes/Civilizaciones/lituanos.png",
+        "especialidad": "Caballería y Monjes",
+        "descripcion": ""
+    },
+    {
+        "id": 28,
+        "nombre": "Magiares",
+        "imagen": "/src/Imagenes/Civilizaciones/magiares.png",
+        "especialidad": "Caballería",
+        "descripcion": ""
+    },
+    {
+        "id": 29,
+        "nombre": "Malayos",
+        "imagen": "/src/Imagenes/Civilizaciones/malayos.png",
+        "especialidad": "Barcos",
+        "descripcion": ""
+    },
+    {
+        "id": 30,
+        "nombre": "Malíes",
+        "imagen": "/src/Imagenes/Civilizaciones/malies.png",
+        "especialidad": "Infantería",
+        "descripcion": ""
+    },
+    {
+        "id": 31,
+        "nombre": "Mayas",
+        "imagen": "/src/Imagenes/Civilizaciones/mayas.png",
+        "especialidad": "Arqueros",
+        "descripcion": ""
+    },
+    {
+        "id": 32,
+        "nombre": "Mongoles",
+        "imagen": "/src/Imagenes/Civilizaciones/mongoles.png",
+        "especialidad": "Arqueros a Caballo",
+        "descripcion": ""
+    },
+    {
+        "id": 33,
+        "nombre": "Persas",
+        "imagen": "/src/Imagenes/Civilizaciones/persas.png",
+        "especialidad": "Caballería",
+        "descripcion": ""
+    },
+    {
+        "id": 34,
+        "nombre": "Polacos",
+        "imagen": "/src/Imagenes/Civilizaciones/polacos.png",
+        "especialidad": "Caballería",
+        "descripcion": ""
+    },
+    {
+        "id": 35,
+        "nombre": "Portugueses",
+        "imagen": "/src/Imagenes/Civilizaciones/portugueses.png",
+        "especialidad": "Barcos y Unidades de Pólvoras",
+        "descripcion": ""
+    },
+    {   
+        "id": 36,
+        "nombre": "Sarracenos",
+        "imagen": "/src/Imagenes/Civilizaciones/sarracenos.png",
+        "especialidad": "Camellos y Naval",
+        "descripcion": ""
+    },
+    {
+        "id": 37,
+        "nombre": "Sicilianos",
+        "imagen": "/src/Imagenes/Civilizaciones/sicilianos.png",
+        "especialidad": "Infantería",
+        "descripcion": ""
+    },
+    {
+        "id": 38,
+        "nombre": "Tártaros",
+        "imagen": "/src/Imagenes/Civilizaciones/tartaros.png",
+        "especialidad": "Arqueros a Caballo",
+        "descripcion": ""
+    },
+    {
+        "id": 39,
+        "nombre": "Teutones",
+        "imagen": "/src/Imagenes/Civilizaciones/teutones.png",
+        "especialidad": "Infantería",
+        "descripcion": ""
+    },
+    {
+        "id": 40,
+        "nombre": "Turcos",
+        "imagen": "/src/Imagenes/Civilizaciones/turcos.png",
+        "especialidad": "Pólvora",
+        "descripcion": ""
+    },
+    {
+        "id": 41,
+        "nombre": "Vietnamitas",
+        "imagen": "/src/Imagenes/Civilizaciones/vietnamitas.png",
+        "especialidad": "Arqueros",
+        "descripcion": ""
+    },
+    {
+        "id": 42,
+        "nombre": "Vikingos",
+        "imagen": "/src/Imagenes/Civilizaciones/vikingos.png",
+        "especialidad": "Infantería y Naval",
+        "descripcion": ""
     }
+
+
 ]

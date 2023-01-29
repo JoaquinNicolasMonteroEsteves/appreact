@@ -8,7 +8,7 @@ const FiltrarUnidades = ({filtroUnidadNueva, menuUnidades}) => {
         return a.toUpperCase() + b
     }
 
-    
+
     return (
         <>
             <div className="filtros-contenedor">

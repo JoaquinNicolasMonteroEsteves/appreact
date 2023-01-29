@@ -286,7 +286,7 @@
     "costoTarjeta": {
         "madera": "225",
         "alimento": "",
-        "oro": "225 ",
+        "oro": "225",
         "piedra": ""
     },
     "imagen": "/src/Imagenes/Unidades/CañónAsedio.png",
@@ -314,7 +314,7 @@
     "costoTarjeta": {
         "madera": "200",
         "alimento": "",
-        "oro": "200 ",
+        "oro": "200",
         "piedra": ""
     },
     "imagen": "/src/Imagenes/Unidades/LanzapiedrasDesarmado.png",

@@ -18,12 +18,6 @@ function Navbar({cart}) {
 	useEffect(() => {
 		setLargo(cart)
 	}, [agregarCarrito])
-	// useEffect(() => {
-	// 	setLargo(carrito.length)
-	// 	console.log(Span)
-	// 	console.log(largo)
-	// 	Span ? Span.innerHTML = `${largo}` : ""
-	// }, [carrito.length])
 
 	return 	<nav className='navbar-contenedor'>
 				<Link to="/" className="link-logo"><img className='navbar-logo' src={Logo}/></Link>
