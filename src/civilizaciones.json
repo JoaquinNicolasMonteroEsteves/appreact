@@ -107,7 +107,7 @@
     {
         "id": 16,
         "nombre": "Españoles",
-        "imagen": "/src/Imagenes/Civilizaciones/españoles.png",
+        "imagen": "/src/Imagenes/Civilizaciones/espanioles.png",
         "especialidad": "Monjes y Pólvora",
         "descripcion": ""
     },

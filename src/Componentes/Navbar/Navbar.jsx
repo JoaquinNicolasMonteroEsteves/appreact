@@ -17,9 +17,9 @@ function Navbar() {
 
 	// const [cart, setCart] = useContext(cartContext)
 	
-	useEffect(() => {
-		setLargo(cart)
-	}, [agregarCarrito])
+	// useEffect(() => {
+	// 	setLargo(cart)
+	// }, [agregarCarrito])
 
 	return 	<nav className='navbar-contenedor'>
 				<Link to="/" className="link-logo"><img className='navbar-logo' src={Logo}/></Link>
