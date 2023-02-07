@@ -6,7 +6,7 @@ import Media from '../../Imagenes/LogoMedia.png';
 import Feudal from '../../Imagenes/LogoFeudal.png';
 import Castillos from '../../Imagenes/LogoCastillos.png';
 import Imperial from '../../Imagenes/LogoImperial.png';
-import unidades from '../../bbdd.json'
+import unidades from '../../bbdd.json';
 // // // import { db } from '../../db/firebase-config';
 // // // import { collection, getDocs, orderBy, query } from "firebase/firestore";
 
@@ -56,9 +56,10 @@ function ItemListContainer()  {
     }
 
     useEffect(() => {
-        cargarUnidades();
-        // // // getUnidades();
-        // // // getUnidades2();
+      setUnidad(unidades)
+      // cargarUnidades();
+      // // // getUnidades();
+      // // // getUnidades2();
     }, [])
 
     const menuUnidades = [...new Set(unidad.map((val) => val.edad))]
@@ -66,7 +67,6 @@ function ItemListContainer()  {
     const filtroUnidadNueva = () => {
       let seleccionados = [...document.querySelectorAll('input[name=categoria]:checked')]
       if(seleccionados.length>0) {
-        debugger
               let catSel = seleccionados.map((x) => x.value)
               let unidadesFiltradas = []
               catSel.forEach((y) => {
