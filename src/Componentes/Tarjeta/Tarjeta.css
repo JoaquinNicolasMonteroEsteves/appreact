@@ -2,33 +2,26 @@
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
     width: 12%;
-    /* height: 36vw; */
+    height: 400px;
     border: 1px solid black;
     border-radius: 1%;
     display: flex;
+    gap: 3px;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 3px;
+    justify-content: space-between;
+    padding: 5px;
 }
 
 .tarjeta-nombre {
     font-size: 1.7vw;
     font-weight: bold;
     height: 17%;
-    /* padding-top: 0.5vw; */
     display: inline-flex;
     flex-wrap: wrap;
     align-content: center;
     line-height: 1;
-}
-
-.tarjeta-descripcion-contenedor {
-    font-size: 1vw;
-    font-weight: bold;
-    padding: 3px 5px;
-    height: 30%;
 }
 
 .tarjeta-imagen {
@@ -39,7 +32,7 @@
     display: flex;
     /* width: fit-content; */
     justify-content: space-around;
-    height: 30%;
+    height: 12%;
     font-size: 1.5vw;
 }
 
@@ -71,21 +64,7 @@
 }
 
 .edad-comprar button {
-    height: 60%;
+    height: 100%;
     position: relative;
     bottom: 0%;
-    /* border: 1px solid black;
-    border-radius: 20%; */
-}
-
-.bu {
-    display: flex;
-    height: 35px;
-    font-size: x-large;
-    /* justify-content: center; */
-    align-items: center;
-}
-
-.bu-img, picture img {
-    height: 100%;
 }

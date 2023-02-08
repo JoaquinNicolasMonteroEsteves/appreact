@@ -6,9 +6,8 @@ import Media from '../../Imagenes/LogoMedia.png';
 import Feudal from '../../Imagenes/LogoFeudal.png';
 import Castillos from '../../Imagenes/LogoCastillos.png';
 import Imperial from '../../Imagenes/LogoImperial.png';
-import unidades from '../../bbdd.json';
-// // // import { db } from '../../db/firebase-config';
-// // // import { collection, getDocs, orderBy, query } from "firebase/firestore";
+import { db } from '../../db/firebase-config';
+import { collection, getDocs, orderBy, query } from "firebase/firestore";
 
 function ItemListContainer()  {
 
@@ -31,35 +30,15 @@ function ItemListContainer()  {
 
     const [unidad, setUnidad] = useState([])
 
-    // // // const itemsCollectionRef = query(collection(db, "unidades"), orderBy("nombre"))
-    // // // const getUnidades = async () => {
-    // // //   const querySnapshot = await getDocs(itemsCollectionRef);
-    // // //   const docs = querySnapshot.docs.map((doc) => doc.data());
-    // // //   setUnidad(docs)
-    // // // }
-
-    // // // const [edades, setEdades] = useState([])
-
-    // // // const itemsCollectionRef2 = query(collection(db, "unidades"), orderBy("edadOrden"))
-    // // // const getUnidades2 = async () => {
-    // // //   const querySnapshot = await getDocs(itemsCollectionRef2);
-    // // //   const docs = querySnapshot.docs.map((doc) => doc.data());
-    // // //   setEdades(docs)
-    // // // }
-
-
-    const cargarUnidades = () => {
-        fetch(unidades)
-            .then((res) => res.json())
-            .then((data) => setUnidad(data))
-            .catch((err) => console.log(err))
+    const itemsCollectionRef = query(collection(db, "unidades"), orderBy("nombre"))
+    const getUnidades = async () => {
+      const querySnapshot = await getDocs(itemsCollectionRef);
+      const docs = querySnapshot.docs.map((doc) => doc.data());
+      setUnidad(docs)
     }
 
     useEffect(() => {
-      setUnidad(unidades)
-      // cargarUnidades();
-      // // // getUnidades();
-      // // // getUnidades2();
+      getUnidades();
     }, [])
 
     const menuUnidades = [...new Set(unidad.map((val) => val.edad))]

@@ -1,3 +1,40 @@
 .unitdetail-container {
-    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.unitdetail-container img {
+    width: 15%;
+}
+
+.unitdetail-container-descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.unitdetail-container-nombre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+
+/* .unitdetail-container-nombre {
+
+} */
+
+.unitdetail-container-descripcion h2 {
+    font-size: 4vw;
+}
+
+.unitdetail-container-descripcion p {
+    font-size: 1.5vw;
 }

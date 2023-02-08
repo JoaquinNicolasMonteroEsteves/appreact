@@ -5,7 +5,7 @@ import comprar from '../../Imagenes/AgregarCarrito.png'
 import { Link } from 'react-router-dom';
 import { cartContext } from '../../Context/CartContext';
 
-function Tarjeta({nombre, cnombre, imagen, valor, descripcion, edad, edadLogo, compra}) {
+function Tarjeta({nombre, cnombre, imagen, valor, edad, edadLogo}) {
 
 const [cart, setCart] = useContext(cartContext)
 
@@ -23,12 +23,12 @@ function mostrarCostoImagen(valor, recurso) {
             </div>
 }
 
-function bla() {
+const mostrarCosto = () => {
     let a = Object.keys(valor)
     let b = Object.values(valor)
 
     let mostrar = []
-    let res = b.filter((x) => x !== "0")
+    let res = b.filter((x) => x !== "")
 
     res.forEach(h => {
         let match = a.find(k => b.indexOf(h) == a.indexOf(k))
@@ -45,11 +45,8 @@ return  <div className={`tarjeta-contenedor tarjeta-${cnombre}`}>
             <div className="tarjeta-imagen">
                 <Link to={`/tienda/${edad}/${nombre}`}><img src={imagen}/></Link>
             </div>
-            <div className='tarjeta-descripcion-contenedor'>
-                <div className='tarjeta-descripcion-costo' id={nombre}>
-                    {bla()}
-                </div>
-                <div className='tarjeta-descripcion'>{descripcion}</div>
+            <div className='tarjeta-descripcion-costo' id={nombre}>
+                {mostrarCosto()}
             </div>
             <div className="edad-comprar">
                 <img src={edadLogo} alt={`Imagen de ${nombre}`} />
