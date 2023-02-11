@@ -1,53 +1,64 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useContext } from 'react';
 import './Carrito.css'
-import {Modal,ModalOverlay,ModalContent,ModalHeader,ModalFooter,ModalBody,ModalCloseButton,useDisclosure,Button} from '@chakra-ui/react'
+import {Modal,ModalOverlay,ModalContent,ModalHeader,ModalBody,ModalCloseButton,useDisclosure,Button, Tooltip} from '@chakra-ui/react'
 import LogoCarrito from '../../Imagenes/carro2.png'
 import LogoCarreta from '../../Imagenes/TradeCart.gif'
-import carrito from '../../carrito.json'
 import { cartContext } from '../../Context/CartContext';
+import { Link } from 'react-router-dom';
 
 function Carrito({}) {
     const { isOpen, onOpen, onClose } = useDisclosure()
-    const [carroDeCompras, setCarroDeCompras] = useState([])
-
     const [cart, setCart] = useContext(cartContext)
-    const totalMadera = cart.reduce((acc, curr) => acc + curr.precioMadera ,0)
-    const totalAlimento = cart.reduce((acc, curr) => acc + curr.precioAlimento ,0)
-    const totalOro = cart.reduce((acc, curr) => acc + curr.precioOro ,0)
-    const totalPiedra = cart.reduce((acc, curr) => acc + curr.precioPiedra ,0)
-    const precioTotal = `${totalMadera} ${totalAlimento} ${totalOro} ${totalPiedra}`
-    
 
-    // const getCarro = () => {
-    //     fetch('src/carrito.json')
-    //         // .then((response) => console.log(response))
-    //         .then((response) =>     response.json())
-    //         // .then((data) => console.log(data))
-    //         .then((data) => setCarroDeCompras(data))
-    //         // .then((data) => console.log(data))
-    //         // .then(() => console.log(carroDeCompras))
-    //         // .catch((err) => console.log(err))
-    // }
+    // const precioTotal = `${totalMadera} ${totalAlimento} ${totalOro} ${totalPiedra}`
+    
+    const mostrarPrecio = () => {
+        const a = [
+            {total: cart.reduce((acc, curr) => acc + curr.precioMadera*curr.quantity ,0), imagen: `/src/Imagenes/Recursos/madera.png`},
+            {total: cart.reduce((acc, curr) => acc + curr.precioAlimento*curr.quantity ,0),  imagen: `/src/Imagenes/Recursos/alimento.png`},
+            {total: cart.reduce((acc, curr) => acc + curr.precioOro*curr.quantity ,0),  imagen: `/src/Imagenes/Recursos/oro.png`},
+            {total: cart.reduce((acc, curr) => acc + curr.precioPiedra*curr.quantity ,0),  imagen: `/src/Imagenes/Recursos/piedra.png`}
 
-    // useEffect(() => {
-    //     getCarro()
-    //     console.log(carroDeCompras)
-    // }, [])
+        ]
+        
+        return (
+            <>
+                {a.map((x) => {
+                    if (x.total!=0) {
+                        return <div className='unitdetail-costo'>
+                            {x.total}
+                            <img src={x.imagen}/>
+                        </div>
+                    }
+                })}
+            </>
+            )
+    }
 
-    // function bla() {
-    //     let a = Object.keys(valor)
-    //     let b = Object.values(valor)
+
+    function mostrarCostoImagen(valor, recurso, cantidad) {
+        let src = `/src/Imagenes/Recursos/${recurso}.png`
+        return  <div className="unitdetail-costo">
+                    <p>{parseInt(valor)*cantidad}</p>
+                    <img src={src}/>
+                </div>
+      }
+
+    function mostrarCosto(costo, cantidad) {
+        let a = Object.keys(costo)
+        let b = Object.values(costo)
     
-    //     let mostrar = []
-    //     let res = b.filter((x) => x !== "")
+        let mostrar = []
+        let res = b.filter((x) => x !== "")
     
-    //     res.forEach(h => {
-    //         let match = a.find(k => b.indexOf(h) == a.indexOf(k))
-    //         mostrar.push(mostrarCostoImagen(h, match))
-    //     })
+        res.forEach(h => {
+            let match = a.find(k => b.indexOf(h) == a.indexOf(k))
+            mostrar.push(mostrarCostoImagen(h, match, cantidad))
+        })
     
-    //     return mostrar
-    // }
+        return mostrar
+    }
+
 
 
 
@@ -70,19 +81,18 @@ function Carrito({}) {
                                 <tr>
                                     <td>{unidad.nombre}</td>
                                     <td><img className="imagen-tabla" src={unidad.imagen} /></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>{mostrarCosto(unidad.valor, unidad.quantity)}</td>
+                                    <td>{unidad.quantity}</td>
                                     {/* <td>{bla}</td>
                                     <td>{(carrito.find((x) => x.nombre == unidad.nombre) == false ? 1 : "#")}</td> */}
                                 </tr>
                                 ) 
                             })}
-                                <tr>
-                                    <td><h3>Total a pagar:</h3></td>
-                                    <td>{precioTotal}</td>
-                                </tr>
                         </tbody>
                     </table>
+                    <h3>Total a pagar:</h3>
+                    <div className='totales-container'>{mostrarPrecio()}</div>
+                    <p>Diríjase a su compra <Link to='/carro-mercancia' onClick={onClose} className="boton-carrito">aquí</Link></p>
                 </div>
             )
         } else {
@@ -98,9 +108,11 @@ function Carrito({}) {
 
     return (
     <>
-        <Button className="boton-carrito" onClick={onOpen}>
-            <img src={LogoCarrito}/>
-        </Button>
+        <Tooltip hasArrow label="Ver carro de mercancías" bg='#FFF' color='black'>
+            <Button className="boton-carrito" onClick={onOpen}>
+                <img src={LogoCarrito}/>
+            </Button>
+        </Tooltip>
             <span id="span-carrito">{cart.length}</span>
 
         <Modal isOpen={isOpen} onClose={onClose}>

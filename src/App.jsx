@@ -6,9 +6,11 @@ import Inicio from './Paginas/Inicio/Inicio.jsx'
 import Civilizaciones from './Paginas/Civilizaciones/Civilizaciones.jsx'
 import ItemListContainer from './Paginas/ItemListContainer/ItemListContainer'
 import UnitDetail from './Componentes/UnitDetail/UnitDetail.jsx'
+import CarroMercancias from './Paginas/CarroMercancias/CarroMercancias.jsx'
 import { CartProvider } from './Context/CartContext.jsx'
 import { collection, getDocs, orderBy, query } from 'firebase/firestore'
 import { db } from './db/firebase-config'
+import ConfirmarCompra from './Paginas/ConfirmarCompra/ConfirmarCompra'
 
 function App() {
 
@@ -37,6 +39,8 @@ return (
           <Route path="/tienda" element={<ItemListContainer />} />
           <Route path="/tienda/:edad" element={<ItemListContainer />} />
           <Route path="/tienda/:edad/:nombre" element={<UnitDetail data={unidades}/>}/>
+          <Route path="/carro-mercancia" element={<CarroMercancias />}/>
+          <Route path="/checkout" element={<ConfirmarCompra />}/>
         </Routes>
       </div>
     </div>

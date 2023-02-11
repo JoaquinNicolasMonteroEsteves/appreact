@@ -1,11 +1,24 @@
-input[type="checkbox"] {
-    margin: 0px 5px;
+.categoria {
+    padding: 0.2% 0.4%;
+    margin: 5px;
+    font-size: x-large;
+    border-radius: 0.5rem;
+    border: solid 1px black;
+    background-color: rgb(198, 137, 58);
+    font-weight: bold;
 }
 
-label {
-    margin-right: 5px;
+.categoria:hover {
+    color: whitesmoke;
+    background-color: rgb(158, 110, 48);
+    transition: 0.1s;
+}
+
+.categoria:active {
+    border: solid 1px white;
 }
 
 .filtros-contenedor {
-    background-color: rgb(215,171,115)
+    background-color: rgb(215,171,115);
+    text-align: center;
 }

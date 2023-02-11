@@ -6,8 +6,8 @@
     gap: 1vw;
 }
 
-.unitdetail-container img {
-    width: 15%;
+.unitdetail-img {
+    width: 20%;
 }
 
 .unitdetail-container-descripcion {
@@ -27,14 +27,30 @@
     height: fit-content;
 }
 
-/* .unitdetail-container-nombre {
+.unitdetail-costo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
 
-} */
+.unitdetail-costo img {
+    width: 50%;
+}
+
+.unitdetail-costo-container {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    gap: 25px;
+}
+
 
 .unitdetail-container-descripcion h2 {
-    font-size: 4vw;
+    font-size: 3.8vw;
 }
 
 .unitdetail-container-descripcion p {
-    font-size: 1.5vw;
+    font-size: 200%;
+    color: rgb(218, 218, 218);
 }

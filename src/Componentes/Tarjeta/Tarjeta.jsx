@@ -1,9 +1,8 @@
 import React, { useContext } from 'react';
 import './Tarjeta.css';
-import comprar from '../../Imagenes/AgregarCarrito.png'
-// import { agregarCarrito } from '../Navbar/Navbar';
 import { Link } from 'react-router-dom';
 import { cartContext } from '../../Context/CartContext';
+import BotonCarrito from '../BotonCarrito/BotonCarrito.jsx';
 
 function Tarjeta({nombre, cnombre, imagen, valor, edad, edadLogo}) {
 
@@ -50,7 +49,10 @@ return  <div className={`tarjeta-contenedor tarjeta-${cnombre}`}>
             </div>
             <div className="edad-comprar">
                 <img src={edadLogo} alt={`Imagen de ${nombre}`} />
-                <button onClick={() => agregarCarrito()}><img src={comprar}/></button>
+                <BotonCarrito 
+                nombre={nombre}
+                valor={valor}
+                imagen={imagen} />
             </div>
         </div>
 }

@@ -7,7 +7,7 @@ import Feudal from '../../Imagenes/LogoFeudal.png';
 import Castillos from '../../Imagenes/LogoCastillos.png';
 import Imperial from '../../Imagenes/LogoImperial.png';
 import { db } from '../../db/firebase-config';
-import { collection, getDocs, orderBy, query } from "firebase/firestore";
+import { collection, getDocs, query } from "firebase/firestore";
 
 function ItemListContainer()  {
 
@@ -30,7 +30,7 @@ function ItemListContainer()  {
 
     const [unidad, setUnidad] = useState([])
 
-    const itemsCollectionRef = query(collection(db, "unidades"), orderBy("nombre"))
+    const itemsCollectionRef = query(collection(db, "unidades"))
     const getUnidades = async () => {
       const querySnapshot = await getDocs(itemsCollectionRef);
       const docs = querySnapshot.docs.map((doc) => doc.data());
@@ -43,24 +43,17 @@ function ItemListContainer()  {
 
     const menuUnidades = [...new Set(unidad.map((val) => val.edad))]
 
-    const filtroUnidadNueva = () => {
-      let seleccionados = [...document.querySelectorAll('input[name=categoria]:checked')]
-      if(seleccionados.length>0) {
-              let catSel = seleccionados.map((x) => x.value)
-              let unidadesFiltradas = []
-              catSel.forEach((y) => {
-              let match = unidad.filter((unidad) => unidad.edad == y)
-              match.forEach((c) => unidadesFiltradas.push(c))
-              setUnidad(unidadesFiltradas)
-              })
-          } else {
-              getUnidades()
-      }
+    const filtroUnidadNueva = (ed) => {
+      const filtrados = unidad.filter((x) =>{
+        return x.edad == ed
+      })
+      setUnidad(filtrados)
     }
 
     return  ( <div className='itemlistcontainer-container'>
                 <FiltrarUnidades 
                 filtroUnidadNueva={filtroUnidadNueva}
+                filtroTodos={getUnidades}
                 setUnidad={setUnidad}
                 menuUnidades={menuUnidades} />
     
