@@ -2,6 +2,8 @@ import './CarroMercancias.css'
 import { cartContext } from '../../Context/CartContext.jsx';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import BotonCarrito from '../../Componentes/BotonCarrito/BotonCarrito';
+import vacio from '../../Imagenes/carritovacio.png'
 
 const CarroMercancias = () => {
 
@@ -33,7 +35,7 @@ const CarroMercancias = () => {
 
     function mostrarCostoImagen(valor, recurso, cantidad) {
         let src = `/src/Imagenes/Recursos/${recurso}.png`
-        return  <div className="unitdetail-costo">
+        return  <div className="carro-costo">
                     <p>{parseInt(valor)*cantidad}</p>
                     <img src={src}/>
                 </div>
@@ -56,14 +58,14 @@ const CarroMercancias = () => {
 
     if (cart.length>0) {
         return (
-            <div className='carrito-container'>
+            <div className='carro-mercancias-container'>
                 <table>
                     <thead>
                         <tr>
                             <th>Unidad</th>
                             <th></th>
                             <th>Precio</th>
-                            <th>Cantidad</th>
+                            <th>Cantidad en carrito</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -71,25 +73,30 @@ const CarroMercancias = () => {
                             return (
                             <tr>
                                 <td>{unidad.nombre}</td>
-                                <td><img className="imagen-tabla" src={unidad.imagen} /></td>
+                                <td><img className="imagen-tabla-carro" src={unidad.imagen} /></td>
                                 <td>{mostrarCosto(unidad.valor, unidad.quantity)}</td>
-                                <td>{unidad.quantity}</td>
-                                {/* <td>{bla}</td>
-                                <td>{(carrito.find((x) => x.nombre == unidad.nombre) == false ? 1 : "#")}</td> */}
+                                <td><BotonCarrito
+                                    nombre={unidad.nombre}
+                                    valor={unidad.valor}
+                                    imagen={unidad.imagen} />
+                                </td>
                             </tr>
                             ) 
                         })}
                     </tbody>
                 </table>
-                <h3>Total a pagar:</h3>
-                <div className='totales-container'>{mostrarPrecio()}</div>
+                <div className='totales-container'>
+                    <h3>Total a pagar:</h3>
+                    <div>{mostrarPrecio()}</div>
+                </div>
                 <p>Para finalizar la compra: <Link to='/checkout'>Continuar</Link></p>
             </div>
         )
     } else {
         return (
-            <div className=''>
-                No tenés nada acá bro
+            <div className='carro-vacio-container'>
+                <p>Cuando el carrito tenga contenido lo podrá ver aquí</p>
+                <img src={vacio} alt="Meme de padrinos mágicos temático" />
             </div>
         )
     }

@@ -6,3 +6,12 @@
     margin: 10px;
     gap: 7px;
 }
+
+.civ-container-hijo.nombre h2 {
+    font-size: 29px;
+    color: whitesmoke;
+}
+
+.civ-container-hijo.descripcion h3 {
+    font-size: 26px;
+}

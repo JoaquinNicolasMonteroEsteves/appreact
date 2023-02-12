@@ -1,0 +1,25 @@
+li {
+    list-style: none;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.chakra-form__label {
+    color: whitesmoke;
+}
+
+.chakra-radio {
+    margin: 0px 10px;
+}
+
+.chakra-input {
+    color: whitesmoke;
+}
+
+.chakra-form-control {
+    margin: 15px 0px;
+}

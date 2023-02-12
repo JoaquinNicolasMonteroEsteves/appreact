@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-li {
+.navbar-lista li {
     padding: 4px;
     margin: 5px;
     border: 2px solid black;
@@ -14,13 +14,13 @@ li {
     width: fit-content;
 }
 
-li:hover {
+.navbar-lista li:hover {
     color: black;
     background-color:grey;
     transition: 0.4s;
 }
 
-li:active {
+.navbar-lista li:active {
     color: white;
 }
 

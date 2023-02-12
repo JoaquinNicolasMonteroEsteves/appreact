@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
 import Navbar from './Componentes/Navbar/Navbar.jsx'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Inicio from './Paginas/Inicio/Inicio.jsx'
 import Civilizaciones from './Paginas/Civilizaciones/Civilizaciones.jsx'
 import ItemListContainer from './Paginas/ItemListContainer/ItemListContainer'
@@ -41,6 +41,7 @@ return (
           <Route path="/tienda/:edad/:nombre" element={<UnitDetail data={unidades}/>}/>
           <Route path="/carro-mercancia" element={<CarroMercancias />}/>
           <Route path="/checkout" element={<ConfirmarCompra />}/>
+          <Route path='*' element={<Navigate to='/' />} />
         </Routes>
       </div>
     </div>

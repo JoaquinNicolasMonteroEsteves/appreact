@@ -9,8 +9,6 @@ import { Link } from 'react-router-dom';
 function Carrito({}) {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [cart, setCart] = useContext(cartContext)
-
-    // const precioTotal = `${totalMadera} ${totalAlimento} ${totalOro} ${totalPiedra}`
     
     const mostrarPrecio = () => {
         const a = [
@@ -25,10 +23,10 @@ function Carrito({}) {
             <>
                 {a.map((x) => {
                     if (x.total!=0) {
-                        return <div className='unitdetail-costo'>
-                            {x.total}
-                            <img src={x.imagen}/>
-                        </div>
+                        return  <div className='costo-total-modal'>
+                                    {x.total}
+                                    <img src={x.imagen}/>
+                                </div>
                     }
                 })}
             </>
@@ -40,7 +38,7 @@ function Carrito({}) {
         let src = `/src/Imagenes/Recursos/${recurso}.png`
         return  <div className="unitdetail-costo">
                     <p>{parseInt(valor)*cantidad}</p>
-                    <img src={src}/>
+                    <img className='res-img' src={src}/>
                 </div>
       }
 
@@ -66,13 +64,13 @@ function Carrito({}) {
         if (cart.length>0) {
             return (
                 <div className='carrito-container'>
-                    <table>
+                    <table className='tabla-modal'>
                         <thead>
                             <tr>
                                 <th>Unidad</th>
                                 <th></th>
                                 <th>Precio</th>
-                                <th>Cantidad</th>
+                                <th>#</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -80,18 +78,18 @@ function Carrito({}) {
                                 return (
                                 <tr>
                                     <td>{unidad.nombre}</td>
-                                    <td><img className="imagen-tabla" src={unidad.imagen} /></td>
+                                    <td><img className='img-td-modal' src={unidad.imagen} /></td>
                                     <td>{mostrarCosto(unidad.valor, unidad.quantity)}</td>
                                     <td>{unidad.quantity}</td>
-                                    {/* <td>{bla}</td>
-                                    <td>{(carrito.find((x) => x.nombre == unidad.nombre) == false ? 1 : "#")}</td> */}
                                 </tr>
                                 ) 
                             })}
                         </tbody>
                     </table>
-                    <h3>Total a pagar:</h3>
-                    <div className='totales-container'>{mostrarPrecio()}</div>
+                    <div>
+                        <h3>Total a pagar:</h3>
+                        <div className='totales-container-modal'>{mostrarPrecio()}</div>
+                    </div>
                     <p>Diríjase a su compra <Link to='/carro-mercancia' onClick={onClose} className="boton-carrito">aquí</Link></p>
                 </div>
             )
@@ -106,6 +104,15 @@ function Carrito({}) {
 
     }
 
+    const contarTotales = () => {
+        let total = 0
+        cart.forEach((x) => {
+            total += x.quantity
+        })
+        return total
+    }
+
+    
     return (
     <>
         <Tooltip hasArrow label="Ver carro de mercancías" bg='#FFF' color='black'>
@@ -113,7 +120,7 @@ function Carrito({}) {
                 <img src={LogoCarrito}/>
             </Button>
         </Tooltip>
-            <span id="span-carrito">{cart.length}</span>
+            <span id="span-carrito">{contarTotales()}</span>
 
         <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />

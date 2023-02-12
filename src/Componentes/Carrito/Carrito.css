@@ -2,10 +2,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
 }
 
-.totales-container {
+.carrito-container h3 {
+    font-size: 20px;
+}
+
+.totales-container-modal {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    gap: 30px;
 }
 
 .boton-carrito {
@@ -17,16 +27,19 @@
     color: whitesmoke;
 }
 
-table {
+.tabla-modal {
     text-align: center;
+    width: 100%;
 }
 
 table th {
     padding: 0px 5px;
+    border-bottom: 1px dotted black;
 }
 
 table td {
     padding: 5px;
+    border-bottom: 1px solid black;
 }
 
 .boton-carrito.chakra-button.boton-carrito.css-i857na {
@@ -90,6 +103,13 @@ table td {
     position: absolute;
 }
 
-.imagen-tabla {
-    height: 10vh;
+.costo-total-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-td-modal {
+    max-width: 100px;
 }
